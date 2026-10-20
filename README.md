@@ -1,0 +1,19 @@
+# Indie game developer portfolio
+
+A small, responsive portfolio site built with plain HTML, CSS, and JavaScript. Open `index.html` in a browser to view it.
+
+## Add or edit a game
+
+Open `script.js` and edit the `projects` list near the top. Each project supports:
+
+- `image`: a picture URL or a local path such as `images/my-game.jpg`
+- `gameUrl`: a link to play or download your game
+- `gameUrl` can be a Roblox game link; its card will show current players and total visits automatically
+- `youtubeId`: the part after `v=` in a YouTube link, such as `dQw4w9WgXcQ`
+- `title`, `year`, `status`, `description`, and `tags`
+
+To use local pictures, create an `images` folder next to `index.html`, put your image in it, and set its path in the project. Duplicate a project object to add another game. Leave `gameUrl` as `#` or `youtubeId` empty until you have a link; the matching button will stay disabled.
+
+Edit the sample name, location, intro, skills, and email in `index.html` to make the rest of the page yours.
+
+Roblox stats need a public Roblox game link and a browser page served over HTTP/HTTPS (for example, use VS Code Live Server instead of opening the HTML as a `file://` page). Counts are fetched from Roblox when the portfolio loads.

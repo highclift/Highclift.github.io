@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10110e" />
+    <meta name="description" content="Independent game developer creating playful worlds and memorable adventures." />
+    <title>Highclift — Roblox Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Highclift home"><span class="brand-mark">H<span>.</span></span><span>highclift</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#games">Games</a><a href="#about">About</a><a href="#contact">Contact</a>
+        </nav>
+        <a class="availability" href="#contact"><span class="status-dot"></span> Available for projects</a>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> ROBLOX GAME DEVELOPER · Indonesia</p>
+            <h1>Making little<br />worlds feel <span class="serif-word">alive.</span></h1>
+            <p class="hero-description">I’m Highclift — a solo game developer building playful experiences, strange new worlds, and the occasional very tall mushroom.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#games">Explore my games <span aria-hidden="true">↘</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a></div>
+            <div class="hero-meta"><div><span class="meta-number">04</span><span class="meta-label">GAMES MADE</span></div><span class="meta-divider"></span><div><span class="meta-number">2</span><span class="meta-label">YEARS CREATING</span></div><span class="meta-divider"></span><div><span class="meta-number">∞</span><span class="meta-label">IDEAS TO TRY</span></div></div>
+          </div>
+          <div>
+            <img class="hero-photo" src="" >
+              <div class="art-sun"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+              <div class="mountain mountain-back"></div><div class="mountain mountain-mid"></div><div class="mountain mountain-front"></div>
+              <div class="art-grain"></div><span class="art-coordinate">37°33'23.4"N<br />126°58'41.2"E</span><span class="art-caption">A WORLD OF YOUR OWN <span>✳</span></span>
+              <!-- <div class="art-sticker"><span>✳</span><small>PLAY<br />CURIOUS</small></div> -->
+          </div>
+          <a href="#games" class="scroll-cue"><span class="scroll-icon">↓</span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <section class="games-section section-wrap" id="games">
+          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line" style="width: 1000px;"></span></p><h2>Made to be <span class="serif-word">played.</span></h2></div><p class="section-note">Independence.<br />Here’s what I’ve been making.</p></div>
+          <div class="filter-row" aria-label="Filter games"><button class="filter-chip active" data-filter="all">All projects <span>04</span></button><button class="filter-chip" data-filter="released">Released</button><button class="filter-chip" data-filter="in-progress">In progress</button><span class="filter-count" id="filter-count">SHOWING 04 PROJECTS</span></div>
+          <div class="game-grid" id="game-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="about-section" id="about"><div class="about-wrap"><div class="about-aside"><p class="eyebrow"><span class="eyebrow-line"></span> THE PERSON BEHIND THE PIXELS</p><div></div> <img class="profile-photo" src="images/highdream.png" alt="Highdream"></div><span class="photo-caption">Usually found debugging after midnight.</span></div><div class="about-copy"><h2>Hi, I’m Highclift.<br />I make <span class="serif-word">games</span> for the joy of it.</h2> <p>
+        I'm a Roblox game developer focused on building gameplay systems,
+        scalable game architecture, and interactive experiences. I enjoy
+        solving complex problems and turning game ideas into functional,
+        well-structured systems.
+    </p>
+
+    <p>
+        I primarily work with <strong>Luau</strong>, using
+        <strong>Knit</strong> to organize game systems and
+        <strong>Roact</strong> to build component-based user interfaces.
+        My experience includes gameplay mechanics, quest systems,
+        role-based gameplay, and integrating features that work together
+        as part of a larger game.
+    </p>
+
+    <p>
+        I believe good game development goes beyond making features work —
+        it's about building systems that are maintainable, reliable,
+        and ready to grow alongside the game.
+    </p><div class="skill-tags"><span>Developer</span><span>Game Design</span><span>Luau</span></div></div></div></section>
+
+        <section class="contact-section section-wrap" id="contact"><div><p class="eyebrow"><span class="eyebrow-line"></span> HAVE A GOOD IDEA?</p><h2>Let’s make<br />something <span class="serif-word">playful.</span></h2></div><div class="contact-action"><p>Have a project, a question, or just want to talk games? My inbox is open.</p><a class="button button-primary" href="mailto:highclifty@gmail.com">Say hello <span aria-hidden="true">↗</span></a><span class="contact-email">highclifty@gmail.com</span></div></section>
+      </main>
+
+      <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">H<span>.</span></span><span>highclift</span></a><span>Made with LOVE & a lot Of Redbull</span><a class="back-top" href="#home">BACK TO TOP ↑</a><span class="copyright">© 2025 HIGHCLIFT</span></footer>
+    </div>
+
+    <dialog class="video-dialog" id="video-dialog" aria-label="Gameplay video"><button class="dialog-close" id="dialog-close" aria-label="Close video">×</button><div class="video-frame" id="video-frame"></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
