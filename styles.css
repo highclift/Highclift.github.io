@@ -896,3 +896,38 @@ h1 {
     margin-left:auto
   }
 }
+
+/* Stretch the CSS landscape behind the hero content. */
+.hero {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: transparent;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.hero-copy,
+.scroll-cue {
+  z-index: 1;
+}
+
+.hero-copy {
+  position: relative;
+}
+
+.art-sun,
+.art-orbit,
+.art-grain,
+.art-coordinate,
+.art-caption,
+.art-sticker {
+  display: none;
+}
