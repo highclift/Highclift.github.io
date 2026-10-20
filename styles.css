@@ -244,6 +244,10 @@ h1 {
   border-right-width:350px;
   border-bottom:133px solid #313a37
 }
+.mountain-back  { left: 10%; }  /* was -4% */
+.mountain-mid   { left: 50%; } /* was 30% */
+.mountain-front { left: 20%; } /* was 3% */
+
 .art-grain {
   position:absolute;
   inset:0;
