@@ -28,9 +28,10 @@ a {
   text-decoration:none
 }
 .site-shell {
+  width:min(100%,1440px);
   max-width:1440px;
-  margin:auto;
-  padding:0 7.2%
+  margin-inline:auto;
+  padding-inline:clamp(24px,7.2vw,104px)
 }
 .topbar {
   height:88px;
@@ -219,35 +220,6 @@ h1 {
   top:80px;
   left:12%
 }
-.mountain {
-  position:absolute;
-  bottom:-1px;
-  width:0;
-  height:0;
-  border-left:280px solid transparent;
-  border-right:280px solid transparent
-}
-.mountain-back {
-  left:-4%;
-  border-bottom:238px solid #9f736b;
-  filter:brightness(1.12)
-}
-.mountain-mid {
-  left:30%;
-  border-left-width:300px;
-  border-right-width:300px;
-  border-bottom:198px solid #67565a
-}
-.mountain-front {
-  left:3%;
-  border-left-width:350px;
-  border-right-width:350px;
-  border-bottom:133px solid #313a37
-}
-.mountain-back  { left: 10%; }  /* was -4% */
-.mountain-mid   { left: 50%; } /* was 30% */
-.mountain-front { left: 20%; } /* was 3% */
-
 .art-grain {
   position:absolute;
   inset:0;
@@ -603,7 +575,7 @@ h1 {
 }
 .photo-caption {
   display:block;
-  margin-top:1px;
+  margin-top:-5px;
   color:var(--muted);
   font:10px var(--mono)
 }
@@ -639,10 +611,15 @@ h1 {
   letter-spacing:.05em
 }
 .contact-section {
+  width:100%;
+  max-width:1232px;
+  margin-inline:auto;
   display:flex;
   justify-content:space-between;
-  align-items:end;
-  gap:40px
+  align-items:center;
+  text-align:left;
+  grid-template-columns:1fr 1fr;
+  gap:10px
 }
 .contact-section h2 {
   font-size:clamp(48px,6vw,75px)
@@ -664,15 +641,25 @@ h1 {
   margin-top:13px
 }
 .footer {
+  width:100%;
+  max-width:1232px;
+  margin-inline:auto;
   border-top:1px solid var(--line);
   min-height:78px;
-  display:flex;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
   align-items:center;
-  justify-content:space-between;
   gap:20px;
   color:#818077;
   font:8px var(--mono);
   letter-spacing:.07em
+}
+.footer>span:first-of-type,
+.back-top {
+  text-align:center
+}
+.copyright {
+  text-align:right
 }
 .footer-brand {
   font:12px var(--sans);
@@ -819,7 +806,7 @@ h1 {
     font-size:40px
   }
   .photo-caption {
-    margin-bottom:10px
+    margin-bottom:20px
   }
   .contact-section {
     align-items:start;
@@ -830,6 +817,7 @@ h1 {
     max-width:420px
   }
   .footer {
+    display:flex;
     padding:17px 0;
     flex-wrap:wrap
   }
@@ -927,6 +915,76 @@ h1 {
   position: relative;
 }
 
+.space-invader {
+  box-shadow: 0 0 0 1em var(--invader-color, red),
+  0 1em 0 1em var(--invader-color, red),
+  -2.5em 1.5em 0 .5em var(--invader-color, red),
+  2.5em 1.5em 0 .5em var(--invader-color, red),
+  -3em -3em 0 0 var(--invader-color, red),
+  3em -3em 0 0 var(--invader-color, red),
+  -2em -2em 0 0 var(--invader-color, red),
+  2em -2em 0 0 var(--invader-color, red),
+  -3em -1em 0 0 var(--invader-color, red),
+  -2em -1em 0 0 var(--invader-color, red),
+  2em -1em 0 0 var(--invader-color, red),
+  3em -1em 0 0 var(--invader-color, red),
+  -4em 0 0 0 var(--invader-color, red),
+  -3em 0 0 0 var(--invader-color, red),
+  3em 0 0 0 var(--invader-color, red),
+  4em 0 0 0 var(--invader-color, red),
+  -5em 1em 0 0 var(--invader-color, red),
+  -4em 1em 0 0 var(--invader-color, red),
+  4em 1em 0 0 var(--invader-color, red),
+  5em 1em 0 0 var(--invader-color, red),
+  -5em 2em 0 0 var(--invader-color, red),
+  5em 2em 0 0 var(--invader-color, red),
+  -5em 3em 0 0 var(--invader-color, red),
+  -3em 3em 0 0 var(--invader-color, red),
+  3em 3em 0 0 var(--invader-color, red),
+  5em 3em 0 0 var(--invader-color, red),
+  -2em 4em 0 0 var(--invader-color, red),
+  -1em 4em 0 0 var(--invader-color, red),
+  1em 4em 0 0 var(--invader-color, red),
+  2em 4em 0 0 var(--invader-color, red);
+  background:var(--invader-color, red);
+  width: 1em;
+  height: 1em;
+  position:absolute;
+  z-index:0;
+  margin:0;
+  transform-origin:center;
+  animation:invader-drift 6s ease-in-out infinite alternate;
+}
+.invader-one {
+  top:22%;
+  right:13%;
+  font-size:10px;
+  --invader-color:var(--lime);
+  --tilt:9deg;
+  animation-duration:6.5s;
+}
+.invader-two {
+  top:48%;
+  right:34%;
+  font-size:7px;
+  --invader-color:var(--text);
+  --tilt:-12deg;
+  animation-delay:-2s;
+  animation-duration:7.5s;
+}
+.invader-three {
+  right:5%;
+  bottom:18%;
+  font-size:8px;
+  --invader-color:var(--orange);
+  --tilt:7deg;
+  animation-delay:-3.5s;
+  animation-duration:8s;
+}
+@keyframes invader-drift {
+  from { transform:translateY(0) rotate(var(--tilt, 0deg)); }
+  to { transform:translateY(-10px) rotate(calc(var(--tilt, 0deg) - 5deg)); }
+}
 .art-sun,
 .art-orbit,
 .art-grain,
