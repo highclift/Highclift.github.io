@@ -16,4 +16,6 @@ To use local pictures, create an `images` folder next to `index.html`, put your 
 
 Edit the sample name, location, intro, skills, and email in `index.html` to make the rest of the page yours.
 
+Edit the `contacts` list near the top of `script.js` to change the contact icons and links. Duplicate an item to add a contact; use `icon: "link"` for the generic icon. Replace the Discord URL with your invite or profile link.
+
 Roblox stats need a public Roblox game link and a browser page served over HTTP/HTTPS (for example, use VS Code Live Server instead of opening the HTML as a `file://` page). Counts are fetched from Roblox when the portfolio loads.

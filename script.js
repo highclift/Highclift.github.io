@@ -1,11 +1,31 @@
 /*
-  ADD YOUR GAMES HERE:
-  Duplicate one project object and edit its fields.
   image: path to a picture (example: "images/my-game.jpg")
   gameUrl: link to play or download the game
   youtubeId: the video ID from youtube.com/watch?v=VIDEO_ID
   Set an unused link to "#" and its button will be disabled.
 */
+/*
+  ADD OR EDIT YOUR CONTACT LINKS HERE:
+  Duplicate an item to add another contact. Use icon: "link" for the generic icon.
+  Replace the Discord URL with your server invite or profile when you have it.
+*/
+const contacts = [
+  { label: "Discord", href: "https://discord.com/app", icon: "discord" },
+  { label: "Email", href: "mailto:highclifty@gmail.com", icon: "email" },
+];
+
+const contactIcons = {
+  discord: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 5.3a18 18 0 0 0-4.4-1.4l-.6 1.2a16.5 16.5 0 0 0-5.4 0l-.6-1.2a18 18 0 0 0-4.4 1.4C1.5 9.5.7 13.6 1.1 17.6a18 18 0 0 0 5.4 2.7l1.2-2a11.7 11.7 0 0 1-1.9-.9l.5-.4c3.7 1.7 7.7 1.7 11.3 0l.5.4a11.7 11.7 0 0 1-1.9.9l1.2 2a18 18 0 0 0 5.4-2.7c.5-4.7-.8-8.8-3.1-12.3ZM8.8 14.6c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1Zm6.4 0c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1Z"/></svg>',
+  email: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285f4" d="M3 7.2 5.8 9v10H4.2A2.2 2.2 0 0 1 2 16.8V8.7c0-.6.4-1.2 1-1.5Z"/><path fill="#34a853" d="M18.2 9 21 7.2c.6.3 1 .9 1 1.5v8.1a2.2 2.2 0 0 1-2.2 2.2h-1.6V9Z"/><path fill="#ea4335" d="m3 7.2 1.1-.7a2.4 2.4 0 0 1 2.8.1l5.1 4 5.1-4a2.4 2.4 0 0 1 2.8-.1l1.1.7-9 7-9-7Z"/><path fill="#c5221f" d="M2.3 7.7 5.8 10v3L2 10.1V8.7c0-.4.1-.7.3-1Z"/><path fill="#fbbc04" d="M18.2 10 22 7.7c.2.3.3.6.3 1v1.4L18.2 13v-3Z"/></svg>',
+  link: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3-3a3 3 0 0 1 4.2 4.2l-2 2a3 3 0 0 1-4.2 0 1 1 0 0 1 1.4-1.4 1 1 0 0 0 1.4 0l2-2a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4l-3 3a3 3 0 0 1-4.2-4.2l2-2a3 3 0 0 1 4.2 0A1 1 0 0 1 11 10.2a1 1 0 0 0-1.4 0l-2 2A1 1 0 0 0 9 13.6l3-3a1 1 0 0 1 1.4 0Z"/></svg>',
+};
+
+const contactLinks = document.querySelector("#contact-links");
+contactLinks.innerHTML = contacts.map(({ label, href, icon }) => {
+  const external = !href.startsWith("mailto:");
+  return `<a class="contact-icon contact-icon-${icon}" href="${href}" aria-label="${label}" title="${label}"${external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${contactIcons[icon] || contactIcons.link}</a>`;
+}).join("");
+
 const projects = [
   {
     title: "Cafe Zone",
