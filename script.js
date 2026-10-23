@@ -7,10 +7,10 @@
 /*
   ADD OR EDIT YOUR CONTACT LINKS HERE:
   Duplicate an item to add another contact. Use icon: "link" for the generic icon.
-  Replace the Discord URL with your server invite or profile when you have it.
+  Discord profile links use: https://discord.com/users/YOUR_USER_ID
 */
 const contacts = [
-  { label: "Discord", href: "https://discord.com/app", icon: "discord" },
+  { label: "Discord", href: "https://discord.com/users/550967634468798474", icon: "discord" },
   { label: "Email", href: "mailto:highclifty@gmail.com", icon: "email" },
 ];
 
