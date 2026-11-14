@@ -1,21 +1,65 @@
-# Indie game developer portfolio
+# Roblox game developer portfolio
 
-A small, responsive portfolio site built with plain HTML, CSS, and JavaScript. Open `index.html` in a browser to view it.
+A small, responsive portfolio site built with plain HTML, CSS, and JavaScript.
+Open `index.html` in a browser to view it, or serve the folder over HTTP (for
+example VS Code Live Server) so `stats.json` can load.
 
 ## Add or edit a game
 
 Open `script.js` and edit the `projects` list near the top. Each project supports:
 
-- `image`: a picture URL or a local path such as `images/my-game.jpg`
-- `gameUrl`: a link to play or download your game
-- `gameUrl` can be a Roblox game link; its card will show current players and total visits automatically
-- `youtubeId`: the part after `v=` in a YouTube link, such as `dQw4w9WgXcQ`
+- `image`: a picture URL or a local path such as `Images/my-game.jpg`. A 16:9
+  picture fits the card exactly.
+- `imageAlt`: a short description of the picture, read aloud by screen readers
+- `gameUrl`: a link to play the game. A Roblox link also connects the card to
+  its visit count (see below). Leave it as `#` and the button reads "Coming soon".
+- `youtubeId`: the part after `v=` in a YouTube link, such as `dQw4w9WgXcQ`.
+  Leave it empty and no trailer button is shown at all.
 - `title`, `year`, `status`, `description`, and `tags`
+- `category`: either `released` or `in-progress`. This drives the filter chips,
+  the colour of the status badge, and the "games shipped" number in the hero.
 
-To use local pictures, create an `images` folder next to `index.html`, put your image in it, and set its path in the project. Duplicate a project object to add another game. Leave `gameUrl` as `#` or `youtubeId` empty until you have a link; the matching button will stay disabled.
+Duplicate a project object to add another game. The filter counts, the project
+count, and the hero stats all count themselves — there is nothing to update by
+hand when you add a game.
 
-Edit the sample name, location, intro, skills, and email in `index.html` to make the rest of the page yours.
+## Visit counts (stats.json)
 
-Edit the `contacts` list near the top of `script.js` to change the contact icons and links. Duplicate an item to add a contact; use `icon: "link"` for the generic icon. Replace the Discord URL with your invite or profile link.
+Roblox's API does not send CORS headers, so a web page **cannot** read it
+directly in the browser — a direct fetch always fails. The numbers therefore
+live in `stats.json`, which the page loads from its own folder:
 
-Roblox stats need a public Roblox game link and a browser page served over HTTP/HTTPS (for example, use VS Code Live Server instead of opening the HTML as a `file://` page). Counts are fetched from Roblox when the portfolio loads.
+    {
+      "updated": "2026-11-15",
+      "places": {
+        "<placeId>": { "visits": 12345 }
+      }
+    }
+
+The `placeId` is the number in a Roblox game URL, for example
+`roblox.com/games/70385018672502/Cafe-Zone` -> `70385018672502`.
+
+To refresh the numbers, fetch them outside the browser (curl, a terminal, or a
+scheduled GitHub Action) and paste them in:
+
+    # 1. place id -> universe id
+    curl "https://apis.roblox.com/universes/v1/places/<placeId>/universe"
+
+    # 2. universe ids (comma separated) -> visits
+    curl "https://games.roblox.com/v1/games?universeIds=<id1>,<id2>"
+
+Set `updated` to the date you refreshed them; the games section prints it so
+visitors know how current the numbers are. If `stats.json` is missing or
+unreadable, cards fall back to "Visit count unavailable" and the hero shows a
+dash — nothing breaks.
+
+## Contact links
+
+Edit the `contacts` list near the top of `script.js`. Duplicate an item to add a
+contact; use `icon: "link"` for the generic icon. The email address is also
+printed as plain text under the icons, taken from the same list.
+
+## Everything else
+
+Edit the hero copy, the about text, and the skill list directly in `index.html`.
+The footer year updates itself.
