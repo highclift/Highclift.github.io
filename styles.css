@@ -8,7 +8,11 @@
   --lime:#c6ef72;
   --orange:#f1a67c;
   --mono:'DM Mono',monospace;
-  --sans:'Space Grotesk',sans-serif
+  --sans:'Space Grotesk',sans-serif;
+  --radius-sm:6px;
+  --radius-md:10px;
+  --radius-lg:14px;
+  --radius-xl:18px
 }
 * {
   box-sizing:border-box
@@ -140,6 +144,7 @@ h1 {
   justify-content:center;
   gap:29px;
   padding:15px 18px;
+  border-radius:var(--radius-md);
   font-size:12px;
   font-weight:600;
   transition:transform .2s,background .2s
@@ -188,6 +193,7 @@ h1 {
 }
 .hero-art {
   height:408px;
+  border-radius:var(--radius-xl);
   position:relative;
   overflow:hidden;
   background:linear-gradient(150deg,#d3ad81 0%,#edbd88 37%,#cb7765 100%)
@@ -322,6 +328,7 @@ h1 {
   background:none;
   font:10px var(--mono);
   padding:10px 12px;
+  border-radius:var(--radius-sm);
   cursor:pointer;
   transition:.2s
 }
@@ -347,6 +354,7 @@ h1 {
 .game-card {
   background:var(--panel);
   border:1px solid #272822;
+  border-radius:var(--radius-lg);
   overflow:hidden;
   transition:transform .25s,border-color .25s
 }
@@ -373,11 +381,6 @@ h1 {
   filter:saturate(1)
 }
 
-.game-card {
-  border-radius: 12px;
-  overflow: hidden;
-}
-
 .image-overlay {
   position:absolute;
   inset:0;
@@ -392,6 +395,7 @@ h1 {
   padding:7px 9px;
   font:8px var(--mono);
   letter-spacing:.08em;
+  border-radius:var(--radius-sm);
   backdrop-filter:blur(5px)
 }
 .game-status::before {
@@ -465,7 +469,8 @@ h1 {
   font:8px var(--mono);
   color:#a5a49b;
   border:1px solid #373830;
-  padding:6px 8px
+  padding:6px 8px;
+  border-radius:var(--radius-sm)
 }
 .game-actions {
   display:flex;
@@ -477,6 +482,7 @@ h1 {
   gap:7px;
   padding:9px 10px;
   border:1px solid #42443a;
+  border-radius:var(--radius-sm);
   background:transparent;
   color:var(--text);
   font:9px var(--mono);
@@ -503,6 +509,7 @@ h1 {
 .empty-state {
   grid-column:1/-1;
   padding:55px;
+  border-radius:var(--radius-lg);
   text-align:center;
   color:var(--muted);
   font-size:13px
@@ -510,7 +517,7 @@ h1 {
 .about-section {
   background:#191a16;
   padding:77px max(7.2%,calc((100% - 1230px)/2));
-  border-radius:16px;
+  border-radius:var(--radius-xl);
   overflow:hidden;
 }
 .about-wrap {
@@ -540,6 +547,7 @@ h1 {
   background:linear-gradient(145deg,#d4ae82,#a96d60);
   display:grid;
   place-content:center;
+  border-radius:var(--radius-lg);
   overflow:hidden
 }
 .about-avatar::before,.about-avatar::after {
@@ -572,6 +580,9 @@ h1 {
   color:var(--lime);
   font-style:normal;
   font-size:20px
+}
+.profile-photo {
+  border-radius:var(--radius-lg)
 }
 .photo-caption {
   display:block;
@@ -607,6 +618,7 @@ h1 {
   border:1px solid #393a33;
   color:#c8c7bb;
   padding:8px 9px;
+  border-radius:var(--radius-sm);
   font:8px var(--mono);
   letter-spacing:.05em
 }
@@ -708,6 +720,7 @@ h1 {
 .video-dialog {
   width:min(900px,92vw);
   border:1px solid #48493d;
+  border-radius:var(--radius-lg);
   padding:0;
   background:#10110e;
   overflow:visible
@@ -721,6 +734,7 @@ h1 {
   right:0;
   top:-47px;
   border:1px solid #57584c;
+  border-radius:var(--radius-sm);
   background:#10110e;
   color:var(--text);
   width:38px;
@@ -729,7 +743,9 @@ h1 {
   cursor:pointer
 }
 .video-frame {
-  aspect-ratio:16/9
+  aspect-ratio:16/9;
+  border-radius:var(--radius-lg);
+  overflow:hidden
 }
 .video-frame iframe {
   width:100%;
