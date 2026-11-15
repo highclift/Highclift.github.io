@@ -327,7 +327,8 @@ p {
   background: var(--grad-accent-bright);
   box-shadow: 0 0 12px #60a5fa99;
   transform: scaleX(0);
-  transform-origin: left;
+  /* Opens from the middle outwards, not left to right. */
+  transform-origin: center;
   transition: transform 0.25s var(--ease);
 }
 
