@@ -423,5 +423,5 @@ setUpFilters();
 setUpNavHighlight();
 showProjects();
 revealOnScroll(
-  document.querySelectorAll(".section-heading, .filter-row, .about-wrap, .contact-section > *"),
+  document.querySelectorAll(".section-heading, .filter-row, .about-copy, .contact-section > *"),
 );

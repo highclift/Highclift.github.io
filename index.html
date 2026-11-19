@@ -54,15 +54,10 @@
         </a>
 
         <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
           <a href="#games">Games</a>
-          <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <a class="availability" href="#contact">
-          <span class="status-dot" aria-hidden="true"></span>
-          Available for projects
-        </a>
       </div>
     </header>
 
@@ -70,6 +65,7 @@
       <main id="main">
         <section class="hero" id="home">
           <div class="hero-backdrop" aria-hidden="true">
+            <div class="hero-stars"></div>
             <div class="hero-glow"></div>
             <div class="hero-grid"></div>
             <div class="space-invader invader-one"></div>
@@ -78,24 +74,28 @@
           </div>
 
           <div class="hero-copy">
-            <p class="eyebrow">
-              <span class="eyebrow-line" aria-hidden="true"></span>
-              ROBLOX GAME DEVELOPER · Indonesia
-            </p>
-            <h1>Turning <span class="serif-word">ideas</span> into playable worlds</h1>
-            <p class="hero-description">
-              I&rsquo;m Highclift &mdash; a solo developer shipping Roblox experiences, from gameplay
-              systems and quest logic to the occasional very tall mushroom.
+            <p class="hero-badge-row">
+              <span class="hero-wave" aria-hidden="true">&#128075;</span>
+              <a class="availability" href="#contact">
+                <span class="status-dot" aria-hidden="true"></span>
+                Available for projects
+              </a>
             </p>
 
-            <div class="hero-actions">
-              <a class="button button-primary" href="#games">
-                Explore my games <span aria-hidden="true">&#8600;</span>
-              </a>
-              <a class="button button-ghost" href="#contact">
-                Work with me <span aria-hidden="true">&#8599;</span>
-              </a>
-            </div>
+            <h1>I&rsquo;m <span class="name-word">Highclift</span></h1>
+
+            <p class="hero-roles">
+              <span>Roblox Developer</span>
+              <span>Gameplay Systems</span>
+              <span>Luau</span>
+              <span>Knit &amp; Roact</span>
+            </p>
+
+            <p class="hero-description">
+              I'm a Roblox game developer focused on building gameplay systems, scalable game
+              architecture, and interactive experiences. I primarily work with <span class="hero-years">Luau</span>, using <span class="hero-years">Knit</span> to organize
+              game systems and <span class="hero-years">Roact</span> to build component-based user interfaces.
+            </p>
 
             <dl class="hero-meta">
               <div class="hero-stat">
@@ -115,6 +115,27 @@
                 <dd class="meta-number">2</dd>
               </div>
             </dl>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#games">
+                VIEW MY WORK <span aria-hidden="true">&#8594;</span>
+              </a>
+              <a class="button button-ghost" href="#contact">
+                <span aria-hidden="true">&#128172;</span> LET&rsquo;S TALK
+              </a>
+            </div>
+
+            <div class="tech-row">
+              <span class="tech-label">TECH STACK</span>
+              <ul class="tech-chips">
+                <li>Luau</li>
+                <li>Knit</li>
+                <li>Roact</li>
+                <li>Roblox Studio</li>
+                <li>Rojo</li>
+                <li>Git</li>
+              </ul>
+            </div>
           </div>
 
           <a href="#games" class="scroll-cue">
@@ -157,61 +178,6 @@
           </div>
 
           <div class="game-grid" id="game-grid"></div>
-        </section>
-
-        <section class="about-section" id="about" aria-labelledby="about-heading">
-          <div class="about-wrap">
-            <div class="about-aside">
-              <p class="eyebrow aside-eyebrow">THE PERSON BEHIND THE GAMES</p>
-              <figure class="about-figure">
-                <img
-                  class="profile-photo"
-                  src="Images/highdream.png"
-                  alt="Highclift&rsquo;s avatar"
-                  width="150"
-                  height="150"
-                  loading="lazy"
-                />
-                <figcaption class="photo-caption">Usually found debugging after midnight.</figcaption>
-              </figure>
-            </div>
-
-            <div class="about-copy">
-              <h2 id="about-heading">
-                Hi, I&rsquo;m Highclift.<br />
-                I make <span class="serif-word">games</span> for the joy of it.
-              </h2>
-
-              <p>
-                I'm a Roblox game developer focused on building gameplay systems, scalable game
-                architecture, and interactive experiences. I enjoy solving complex problems and
-                turning game ideas into functional, well-structured systems.
-              </p>
-
-              <p>
-                I primarily work with <strong>Luau</strong>, using <strong>Knit</strong> to organize
-                game systems and <strong>Roact</strong> to build component-based user interfaces. My
-                experience includes gameplay mechanics, quest systems, role-based gameplay, and
-                integrating features that work together as part of a larger game.
-              </p>
-
-              <p>
-                I believe good game development goes beyond making features work &mdash; it's about
-                building systems that are maintainable, reliable, and ready to grow alongside the
-                game.
-              </p>
-
-              <h3 class="skills-title">What I work with</h3>
-              <ul class="skill-tags">
-                <li>Luau</li>
-                <li>Knit</li>
-                <li>Roact</li>
-                <li>Gameplay systems</li>
-                <li>Game design</li>
-                <li>Quest &amp; role systems</li>
-              </ul>
-            </div>
-          </div>
         </section>
 
         <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-heading">
