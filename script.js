@@ -3,18 +3,23 @@
   image: path to a picture (example: "Images/my-game.jpg") — 16:9 looks best
   gameUrl: link to play the game. A Roblox link also powers the live stats.
   youtubeId: the video ID from youtube.com/watch?v=VIDEO_ID
-  Leave youtubeId empty and the trailer button is hidden; set gameUrl to "#"
-  and the play button is disabled.
+  Leave youtubeId empty and the trailer button is hidden. Leave gameUrl empty
+  (or "#") and the card says the game is still in development instead of
+  opening Roblox.
 */
 
 /*
   ADD OR EDIT YOUR CONTACT LINKS HERE:
-  Duplicate an item to add another contact. Use icon: "link" for the generic icon.
+  Each one becomes a card in the contact section. Duplicate an item to add
+  another. Available icons: "discord", "email", "github", "roblox", "link".
   Discord profile links use: https://discord.com/users/YOUR_USER_ID
+  e.g. { label: "GitHub", href: "https://github.com/YOUR_NAME", icon: "github" },
 */
 const contacts = [
+  { label: "Roblox", href: "https://www.roblox.com/id/users/7760193455/profile", icon: "roblox" },
   { label: "Discord", href: "https://discord.com/users/550967634468798474", icon: "discord" },
   { label: "Email", href: "mailto:highclifty@gmail.com", icon: "email" },
+  { label: "GitHub", href: "https://github.co m/Highclift", icon: "github" },
 ];
 
 const projects = [
@@ -85,9 +90,7 @@ const projects = [
     image:
       "https://tr.rbxcdn.com/180DAY-980ef4b4b4639b6cfe29a484e537e847/768/432/GameMediaItem9/Webp/noFilter",
     imageAlt: "Guard VS Robbers thumbnail — guards chasing robbers through a mall",
-    // TODO: this still points at Delivery Boss. Swap in the real link (or "#")
-    // once Guard VS Robbers has its own Roblox page.
-    gameUrl: "https://www.roblox.com/id/games/124259204488421/Delivery-Boss",
+    gameUrl: "",
     youtubeId: "",
   },
 ];
@@ -99,6 +102,10 @@ const contactIcons = {
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 5.3a18 18 0 0 0-4.4-1.4l-.6 1.2a16.5 16.5 0 0 0-5.4 0l-.6-1.2a18 18 0 0 0-4.4 1.4C1.5 9.5.7 13.6 1.1 17.6a18 18 0 0 0 5.4 2.7l1.2-2a11.7 11.7 0 0 1-1.9-.9l.5-.4c3.7 1.7 7.7 1.7 11.3 0l.5.4a11.7 11.7 0 0 1-1.9.9l1.2 2a18 18 0 0 0 5.4-2.7c.5-4.7-.8-8.8-3.1-12.3ZM8.8 14.6c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1Zm6.4 0c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1Z"/></svg>',
   email:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285f4" d="M3 7.2 5.8 9v10H4.2A2.2 2.2 0 0 1 2 16.8V8.7c0-.6.4-1.2 1-1.5Z"/><path fill="#34a853" d="M18.2 9 21 7.2c.6.3 1 .9 1 1.5v8.1a2.2 2.2 0 0 1-2.2 2.2h-1.6V9Z"/><path fill="#ea4335" d="m3 7.2 1.1-.7a2.4 2.4 0 0 1 2.8.1l5.1 4 5.1-4a2.4 2.4 0 0 1 2.8-.1l1.1.7-9 7-9-7Z"/><path fill="#c5221f" d="M2.3 7.7 5.8 10v3L2 10.1V8.7c0-.4.1-.7.3-1Z"/><path fill="#fbbc04" d="M18.2 10 22 7.7c.2.3.3.6.3 1v1.4L18.2 13v-3Z"/></svg>',
+  github:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8a2 2 0 0 1 .6-1.3c-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>',
+  roblox:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.9 1.6 22.4 6.3 17.7 23.8.2 19.1 4.9 1.6Zm5.3 8.1-1.2 4.5 4.5 1.2 1.2-4.5-4.5-1.2Z"/></svg>',
   link:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3-3a3 3 0 0 1 4.2 4.2l-2 2a3 3 0 0 1-4.2 0 1 1 0 0 1 1.4-1.4 1 1 0 0 0 1.4 0l2-2a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4l-3 3a3 3 0 0 1-4.2-4.2l2-2a3 3 0 0 1 4.2 0A1 1 0 0 1 11 10.2a1 1 0 0 0-1.4 0l-2 2A1 1 0 0 0 9 13.6l3-3a1 1 0 0 1 1.4 0Z"/></svg>',
 };
@@ -135,11 +142,13 @@ function renderContacts() {
   links.innerHTML = contacts
     .map(({ label, href, icon }) => {
       const external = !href.startsWith("mailto:");
-      return `<a class="contact-icon contact-icon-${esc(icon)}" href="${esc(href)}" aria-label="${esc(
-        label,
-      )}" title="${esc(label)}"${
+      return `<a class="contact-card contact-card-${esc(icon)}" href="${esc(href)}"${
         external ? ' target="_blank" rel="noopener noreferrer"' : ""
-      }>${contactIcons[icon] || contactIcons.link}</a>`;
+      }>
+        <span class="card-arrow" aria-hidden="true">&#8599;</span>
+        <span class="card-icon">${contactIcons[icon] || contactIcons.link}</span>
+        <span class="card-label">${esc(label)}</span>
+      </a>`;
     })
     .join("");
 
@@ -148,7 +157,7 @@ function renderContacts() {
   const direct = document.querySelector("#contact-direct");
   if (email) {
     const address = email.href.replace("mailto:", "");
-    direct.innerHTML = `or email <a href="${esc(email.href)}">${esc(address)}</a>`;
+    // direct.innerHTML = `or email <a href="${esc(email.href)}">${esc(address)}</a>`;
   }
 }
 
@@ -198,9 +207,10 @@ function projectCard(project) {
     ? `<a class="game-button play" href="${esc(
         playable,
       )}" target="_blank" rel="noopener noreferrer">Play game <span aria-hidden="true">&#8599;</span></a>`
-    : `<span class="game-button play" aria-disabled="true" title="Add your game link in script.js">Coming soon</span>`;
+    : `<button class="game-button play is-pending" type="button">In development</button>`;
 
-  return `<article class="game-card" data-category="${esc(project.category)}">
+  return `<article class="game-card" data-category="${esc(project.category)}" data-title="${title}"
+    data-url="${hasLink ? esc(playable) : ""}">
     ${image}
     <div class="game-info">
       <div class="game-title-row">${heading}<span class="game-year">${esc(project.year)}</span></div>
@@ -251,7 +261,7 @@ function paintStatsDate() {
 
   const date = new Date(`${statsUpdated}T00:00:00`);
   if (Number.isNaN(date.valueOf())) return;
-  node.textContent = `Visit counts from the Roblox API, updated ${date.toLocaleDateString("en-GB", {
+  node.textContent = `Visit counts ${date.toLocaleDateString("en-GB", {
     day: "numeric",
     month: "short",
     year: "numeric",
@@ -351,7 +361,7 @@ function openVideo(id, title) {
     title,
   )} gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
   videoDialog.showModal();
-  dialogClose.focus();
+  dialogClose.focus({ preventScroll: true });
 }
 
 dialogClose.addEventListener("click", () => videoDialog.close());
@@ -360,8 +370,60 @@ videoDialog.addEventListener("click", (event) => {
 });
 videoDialog.addEventListener("close", () => {
   videoFrame.innerHTML = "";
-  lastFocused?.focus?.();
+  lastFocused?.focus?.({ preventScroll: true });
 });
+
+/* Launch confirmation ----------------------------------------------------- */
+// Cards no longer navigate on their own. A click asks first, so nobody is sent
+// off to roblox.com by accident, and the unreleased games get to explain
+// themselves instead of looking like a dead link.
+const confirmDialog = document.querySelector("#confirm-dialog");
+const confirmEyebrow = document.querySelector("#confirm-eyebrow");
+const confirmTitle = document.querySelector("#confirm-title");
+const confirmBody = document.querySelector("#confirm-body");
+const confirmCancel = document.querySelector("#confirm-cancel");
+const confirmAccept = document.querySelector("#confirm-accept");
+
+function openLaunchPrompt(title, url) {
+  lastFocused = document.activeElement;
+  const released = Boolean(url);
+
+  confirmDialog.classList.toggle("is-notice", !released);
+  confirmEyebrow.textContent = released ? "EXTERNAL LINK" : "IN DEVELOPMENT";
+  confirmTitle.textContent = released ? "Leaving this site" : "Not published yet";
+  confirmBody.innerHTML = released
+    ? `<strong>${esc(title)}</strong> is hosted on roblox.com. Open it in a new tab?`
+    : `<strong>${esc(
+        title,
+      )}</strong> is still in development and has not been published yet. It will be playable from here the moment it launches.`;
+
+  confirmCancel.textContent = released ? "Cancel" : "Close";
+  confirmAccept.hidden = !released;
+  if (released) confirmAccept.href = url;
+  else confirmAccept.removeAttribute("href");
+
+  confirmDialog.showModal();
+  (released ? confirmAccept : confirmCancel).focus({ preventScroll: true });
+}
+
+// One listener on the grid, so cards re-rendered by a filter never need wiring.
+grid.addEventListener("click", (event) => {
+  const card = event.target.closest(".game-card");
+  if (!card || event.target.closest(".video-button")) return;
+
+  // A deliberate ctrl/shift-click on a real link still opens the usual way.
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  event.preventDefault();
+  openLaunchPrompt(card.dataset.title, card.dataset.url);
+});
+
+confirmCancel.addEventListener("click", () => confirmDialog.close());
+confirmAccept.addEventListener("click", () => confirmDialog.close());
+confirmDialog.addEventListener("click", (event) => {
+  if (event.target === confirmDialog) confirmDialog.close();
+});
+confirmDialog.addEventListener("close", () => lastFocused?.focus?.({ preventScroll: true }));
 
 /* Scroll reveal + nav highlighting ---------------------------------------- */
 const revealObserver =
@@ -423,5 +485,5 @@ setUpFilters();
 setUpNavHighlight();
 showProjects();
 revealOnScroll(
-  document.querySelectorAll(".section-heading, .filter-row, .about-wrap, .contact-section > *"),
+  document.querySelectorAll(".section-heading, .filter-row, .about-copy, .contact-section > *"),
 );

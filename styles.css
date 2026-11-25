@@ -46,6 +46,11 @@
   --glow: 0 26px 60px -28px #000000d9, 0 0 36px -14px #3b82f659;
   --glow-lift: 0 34px 74px -26px #000000e6, 0 0 60px -12px #60a5fa8c;
 
+  /* Starfield tiles for the page backdrop. */
+  --stars-far: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27620%27 height=%27620%27%3E%3Cg fill=%27%23eaf3ff%27 fill-opacity=%270.55%27%3E%3Ccircle cx=%2769%27 cy=%27264%27 r=%270.8%27/%3E%3Ccircle cx=%27141%27 cy=%27275%27 r=%270.8%27/%3E%3Ccircle cx=%2736%27 cy=%27214%27 r=%270.8%27/%3E%3Ccircle cx=%27364%27 cy=%27237%27 r=%270.8%27/%3E%3Ccircle cx=%27373%27 cy=%27221%27 r=%270.8%27/%3E%3Ccircle cx=%27186%27 cy=%27472%27 r=%270.8%27/%3E%3Ccircle cx=%27277%27 cy=%27508%27 r=%270.8%27/%3E%3Ccircle cx=%27429%27 cy=%27242%27 r=%270.8%27/%3E%3Ccircle cx=%2754%27 cy=%27224%27 r=%270.8%27/%3E%3Ccircle cx=%270%27 cy=%27194%27 r=%270.8%27/%3E%3Ccircle cx=%27457%27 cy=%27501%27 r=%270.8%27/%3E%3Ccircle cx=%2774%27 cy=%27103%27 r=%270.8%27/%3E%3Ccircle cx=%27347%27 cy=%2796%27 r=%270.8%27/%3E%3Ccircle cx=%27475%27 cy=%27397%27 r=%270.8%27/%3E%3Ccircle cx=%27253%27 cy=%27553%27 r=%270.8%27/%3E%3Ccircle cx=%27579%27 cy=%27244%27 r=%270.8%27/%3E%3Ccircle cx=%2792%27 cy=%27531%27 r=%270.8%27/%3E%3Ccircle cx=%2786%27 cy=%27448%27 r=%270.8%27/%3E%3Ccircle cx=%27490%27 cy=%27579%27 r=%270.8%27/%3E%3Ccircle cx=%2743%27 cy=%2716%27 r=%270.8%27/%3E%3Ccircle cx=%27288%27 cy=%27308%27 r=%270.8%27/%3E%3Ccircle cx=%27181%27 cy=%27512%27 r=%270.8%27/%3E%3Ccircle cx=%27597%27 cy=%27271%27 r=%270.8%27/%3E%3Ccircle cx=%27431%27 cy=%27166%27 r=%270.8%27/%3E%3Ccircle cx=%27461%27 cy=%27146%27 r=%270.8%27/%3E%3Ccircle cx=%27427%27 cy=%27261%27 r=%270.8%27/%3E%3Ccircle cx=%27103%27 cy=%27455%27 r=%270.8%27/%3E%3Ccircle cx=%27609%27 cy=%27348%27 r=%270.8%27/%3E%3Ccircle cx=%27240%27 cy=%27604%27 r=%270.8%27/%3E%3Ccircle cx=%27449%27 cy=%27399%27 r=%270.8%27/%3E%3Ccircle cx=%27270%27 cy=%27605%27 r=%270.8%27/%3E%3Ccircle cx=%27273%27 cy=%27268%27 r=%270.8%27/%3E%3Ccircle cx=%2799%27 cy=%27180%27 r=%270.8%27/%3E%3Ccircle cx=%27311%27 cy=%27266%27 r=%270.8%27/%3E%3Ccircle cx=%27228%27 cy=%27262%27 r=%270.8%27/%3E%3Ccircle cx=%27545%27 cy=%2711%27 r=%270.8%27/%3E%3Ccircle cx=%27310%27 cy=%27421%27 r=%270.8%27/%3E%3Ccircle cx=%27204%27 cy=%27261%27 r=%270.8%27/%3E%3Ccircle cx=%27203%27 cy=%27263%27 r=%270.8%27/%3E%3Ccircle cx=%2729%27 cy=%27533%27 r=%270.8%27/%3E%3Ccircle cx=%27248%27 cy=%27611%27 r=%270.8%27/%3E%3Ccircle cx=%27492%27 cy=%27613%27 r=%270.8%27/%3E%3Ccircle cx=%27485%27 cy=%27288%27 r=%270.8%27/%3E%3Ccircle cx=%27538%27 cy=%2739%27 r=%270.8%27/%3E%3Ccircle cx=%27618%27 cy=%27172%27 r=%270.8%27/%3E%3Ccircle cx=%27157%27 cy=%27470%27 r=%270.8%27/%3E%3C/g%3E%3C/svg%3E");
+  --stars-mid: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27430%27 height=%27430%27%3E%3Cg fill=%27%23eaf3ff%27 fill-opacity=%270.8%27%3E%3Ccircle cx=%2767%27 cy=%27167%27 r=%271.1%27/%3E%3Ccircle cx=%2783%27 cy=%2737%27 r=%271.1%27/%3E%3Ccircle cx=%27196%27 cy=%27189%27 r=%271.1%27/%3E%3Ccircle cx=%27334%27 cy=%27251%27 r=%271.1%27/%3E%3Ccircle cx=%27286%27 cy=%27344%27 r=%271.1%27/%3E%3Ccircle cx=%27387%27 cy=%27390%27 r=%271.1%27/%3E%3Ccircle cx=%2721%27 cy=%2760%27 r=%271.1%27/%3E%3Ccircle cx=%27213%27 cy=%27166%27 r=%271.1%27/%3E%3Ccircle cx=%27308%27 cy=%27391%27 r=%271.1%27/%3E%3Ccircle cx=%2721%27 cy=%27327%27 r=%271.1%27/%3E%3Ccircle cx=%2759%27 cy=%2775%27 r=%271.1%27/%3E%3Ccircle cx=%27131%27 cy=%27400%27 r=%271.1%27/%3E%3Ccircle cx=%2763%27 cy=%27156%27 r=%271.1%27/%3E%3Ccircle cx=%27349%27 cy=%27389%27 r=%271.1%27/%3E%3Ccircle cx=%2790%27 cy=%27108%27 r=%271.1%27/%3E%3Ccircle cx=%27401%27 cy=%27170%27 r=%271.1%27/%3E%3Ccircle cx=%27310%27 cy=%27269%27 r=%271.1%27/%3E%3Ccircle cx=%27193%27 cy=%27296%27 r=%271.1%27/%3E%3Ccircle cx=%27198%27 cy=%27329%27 r=%271.1%27/%3E%3Ccircle cx=%2752%27 cy=%27268%27 r=%271.1%27/%3E%3Ccircle cx=%27208%27 cy=%27300%27 r=%271.1%27/%3E%3Ccircle cx=%27308%27 cy=%2733%27 r=%271.1%27/%3E%3Ccircle cx=%27210%27 cy=%27281%27 r=%271.1%27/%3E%3Ccircle cx=%27234%27 cy=%27410%27 r=%271.1%27/%3E%3Ccircle cx=%2797%27 cy=%27302%27 r=%271.1%27/%3E%3Ccircle cx=%27112%27 cy=%27406%27 r=%271.1%27/%3E%3Ccircle cx=%27423%27 cy=%27393%27 r=%271.1%27/%3E%3Ccircle cx=%27308%27 cy=%2721%27 r=%271.1%27/%3E%3Ccircle cx=%27415%27 cy=%2777%27 r=%271.1%27/%3E%3Ccircle cx=%2751%27 cy=%27417%27 r=%271.1%27/%3E%3C/g%3E%3C/svg%3E");
+  --stars-near: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27290%27 height=%27290%27%3E%3Cg fill=%27%23eaf3ff%27 fill-opacity=%271%27%3E%3Ccircle cx=%2723%27 cy=%27214%27 r=%271.6%27/%3E%3Ccircle cx=%27226%27 cy=%27157%27 r=%271.6%27/%3E%3Ccircle cx=%27257%27 cy=%27223%27 r=%271.6%27/%3E%3Ccircle cx=%2724%27 cy=%2747%27 r=%271.6%27/%3E%3Ccircle cx=%27287%27 cy=%27230%27 r=%271.6%27/%3E%3Ccircle cx=%27211%27 cy=%27150%27 r=%271.6%27/%3E%3Ccircle cx=%27151%27 cy=%27270%27 r=%271.6%27/%3E%3Ccircle cx=%2792%27 cy=%27247%27 r=%271.6%27/%3E%3Ccircle cx=%27203%27 cy=%27224%27 r=%271.6%27/%3E%3Ccircle cx=%27130%27 cy=%2762%27 r=%271.6%27/%3E%3Ccircle cx=%2711%27 cy=%2777%27 r=%271.6%27/%3E%3Ccircle cx=%2733%27 cy=%27266%27 r=%271.6%27/%3E%3Ccircle cx=%27208%27 cy=%27234%27 r=%271.6%27/%3E%3Ccircle cx=%275%27 cy=%27133%27 r=%271.6%27/%3E%3Ccircle cx=%27153%27 cy=%2719%27 r=%271.6%27/%3E%3Ccircle cx=%2758%27 cy=%27137%27 r=%271.6%27/%3E%3C/g%3E%3C/svg%3E");
+
   --mono: 'DM Mono', monospace;
   --sans: 'Space Grotesk', sans-serif;
 
@@ -116,6 +121,124 @@ body::after {
   -webkit-mask-image: radial-gradient(44vw 58vh at 76% 12%, #000 0%, #000 20%, transparent 68%);
 }
 
+/* Page backdrop ------------------------------------------------------------
+   Fixed to the viewport, like the aurora above it, so one sky carries the
+   whole page instead of ending where the hero does. */
+.site-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Starfield: three tiled dot layers at different scales, so the repeat never
+   lines up into a visible grid. */
+.backdrop-stars {
+  position: absolute;
+  inset: 0;
+  opacity: 0.9;
+  background-image: var(--stars-far), var(--stars-mid), var(--stars-near);
+  background-size: 620px 620px, 430px 430px, 290px 290px;
+  animation: star-twinkle 7s ease-in-out infinite alternate;
+}
+
+@keyframes star-twinkle {
+  from {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Faded at the edges so the grid never ends on a hard line. */
+.backdrop-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right, #ffffff0a 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff0a 1px, transparent 1px);
+  background-size: 76px 76px;
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, #000 10%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, #000 10%, transparent 80%);
+}
+
+.space-invader {
+  box-shadow: 0 0 0 1em var(--invader-color), 0 1em 0 1em var(--invader-color),
+    -2.5em 1.5em 0 0.5em var(--invader-color), 2.5em 1.5em 0 0.5em var(--invader-color),
+    -3em -3em 0 0 var(--invader-color), 3em -3em 0 0 var(--invader-color),
+    -2em -2em 0 0 var(--invader-color), 2em -2em 0 0 var(--invader-color),
+    -3em -1em 0 0 var(--invader-color), -2em -1em 0 0 var(--invader-color),
+    2em -1em 0 0 var(--invader-color), 3em -1em 0 0 var(--invader-color),
+    -4em 0 0 0 var(--invader-color), -3em 0 0 0 var(--invader-color),
+    3em 0 0 0 var(--invader-color), 4em 0 0 0 var(--invader-color),
+    -5em 1em 0 0 var(--invader-color), -4em 1em 0 0 var(--invader-color),
+    4em 1em 0 0 var(--invader-color), 5em 1em 0 0 var(--invader-color),
+    -5em 2em 0 0 var(--invader-color), 5em 2em 0 0 var(--invader-color),
+    -5em 3em 0 0 var(--invader-color), -3em 3em 0 0 var(--invader-color),
+    3em 3em 0 0 var(--invader-color), 5em 3em 0 0 var(--invader-color),
+    -2em 4em 0 0 var(--invader-color), -1em 4em 0 0 var(--invader-color),
+    1em 4em 0 0 var(--invader-color), 2em 4em 0 0 var(--invader-color);
+  background: var(--invader-color);
+  --invader-color: #60a5fa;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  opacity: 0.4;
+  transform-origin: center;
+  animation: invader-drift 6s ease-in-out infinite alternate;
+}
+
+/* Spread across the viewport rather than clustered around the headline, so
+   there is one in view wherever the page is scrolled to. */
+.invader-one {
+  top: 16%;
+  left: 7%;
+  font-size: 6px;
+  --invader-color: #60a5fa;
+  --tilt: 9deg;
+  animation-duration: 6.5s;
+}
+
+.invader-two {
+  top: 62%;
+  left: 13%;
+  font-size: 5px;
+  --invader-color: #818cf8;
+  --tilt: -12deg;
+  animation-delay: -2s;
+  animation-duration: 7.5s;
+}
+
+.invader-three {
+  right: 8%;
+  top: 30%;
+  font-size: 6px;
+  --invader-color: #a78bfa;
+  --tilt: 7deg;
+  animation-delay: -3.5s;
+  animation-duration: 8s;
+}
+
+.invader-four {
+  right: 14%;
+  bottom: 12%;
+  font-size: 5px;
+  --invader-color: #7dd3fc;
+  --tilt: -8deg;
+  animation-delay: -5s;
+  animation-duration: 9s;
+}
+
+@keyframes invader-drift {
+  from {
+    transform: translateY(0) rotate(var(--tilt, 0deg));
+  }
+  to {
+    transform: translateY(-10px) rotate(calc(var(--tilt, 0deg) - 5deg));
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -159,14 +282,13 @@ p {
    surface gets one, so the treatment stays identical across the page. */
 .availability::before,
 .button::before,
-.hero-meta::before,
 .filter-chip::before,
 .game-card::before,
 .game-button::before,
-.about-section::before,
-.skill-tags li::before,
-.contact-icon::before,
+.contact-card::before,
 .video-dialog::before,
+.confirm-dialog::before,
+.confirm-button::before,
 .dialog-close::before {
   content: '';
   position: absolute;
@@ -189,7 +311,8 @@ p {
 .button:hover,
 .filter-chip:hover,
 .game-button:hover,
-.contact-icon:hover,
+.contact-card:hover,
+.confirm-button:hover,
 .dialog-close:hover,
 .game-card:hover,
 .game-card:focus-within {
@@ -201,28 +324,26 @@ p {
 @supports not ((-webkit-mask-composite: xor) or (mask-composite: exclude)) {
   .availability::before,
   .button::before,
-  .hero-meta::before,
   .filter-chip::before,
   .game-card::before,
   .game-button::before,
-  .about-section::before,
-  .skill-tags li::before,
-  .contact-icon::before,
+  .contact-card::before,
   .video-dialog::before,
+  .confirm-dialog::before,
+  .confirm-button::before,
   .dialog-close::before {
     display: none;
   }
 
   .availability,
   .button,
-  .hero-meta,
   .filter-chip,
   .game-card,
   .game-button,
-  .about-section,
-  .skill-tags li,
-  .contact-icon,
+  .contact-card,
   .video-dialog,
+  .confirm-dialog,
+  .confirm-button,
   .dialog-close {
     border: 1px solid #ffffff2e;
   }
@@ -304,42 +425,38 @@ p {
   color: transparent;
 }
 
+/* Links live at the top right, each one a pill that lights up when its
+   section is the one on screen. */
 .main-nav {
   display: flex;
-  gap: 37px;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
   color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .main-nav a {
   position: relative;
-  padding: 6px 0;
-  transition: color 0.2s var(--ease);
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: color 0.2s var(--ease), background 0.2s var(--ease),
+    border-color 0.2s var(--ease);
 }
 
-.main-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  height: 2px;
-  border-radius: 2px;
-  background: var(--grad-accent-bright);
-  box-shadow: 0 0 12px #60a5fa99;
-  transform: scaleX(0);
-  /* Opens from the middle outwards, not left to right. */
-  transform-origin: center;
-  transition: transform 0.25s var(--ease);
+.main-nav a:hover {
+  color: #fff;
+  background: #ffffff0f;
 }
 
-.main-nav a:hover,
 .main-nav a[aria-current='true'] {
   color: #fff;
-}
-
-.main-nav a:hover::after,
-.main-nav a[aria-current='true']::after {
-  transform: scaleX(1);
+  background: var(--grad-accent-soft);
+  border-color: #8b5cf680;
+  box-shadow: 0 0 24px -8px #8b5cf6a6;
 }
 
 .back-top {
@@ -394,13 +511,17 @@ p {
 }
 
 /* 4. Hero ------------------------------------------------------------------ */
+/* Everything in the hero is stacked on one centre line, so the backdrop reads
+   as deep space the copy floats in rather than a panel it sits beside. */
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: min(650px, 86vh);
-  padding: 92px 0 72px;
+  min-height: min(760px, 92vh);
+  padding: 76px 0 64px;
   display: grid;
   align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .hero-backdrop {
@@ -413,23 +534,15 @@ p {
 
 .hero-glow {
   position: absolute;
-  top: -26%;
-  right: -6%;
-  width: 48vw;
-  height: 48vw;
-  max-width: 660px;
-  max-height: 660px;
-  background: radial-gradient(circle, #3b82f64d 0%, #6366f126 42%, transparent 68%);
+  top: -18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 70vw;
+  max-width: 1100px;
+  max-height: 760px;
+  background: radial-gradient(ellipse at center, #3b82f640 0%, #6366f124 40%, transparent 68%);
   filter: blur(10px);
-}
-
-.hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(to right, #ffffff0f 1px, transparent 1px),
-    linear-gradient(to bottom, #ffffff0f 1px, transparent 1px);
-  background-size: 76px 76px;
-  mask-image: radial-gradient(ellipse 75% 65% at 70% 35%, #000 10%, transparent 72%);
 }
 
 .eyebrow {
@@ -452,11 +565,11 @@ p {
 }
 
 h1 {
-  font-size: clamp(44px, 7vw, 92px);
-  letter-spacing: -0.075em;
-  line-height: 0.94;
-  margin: 29px 0 23px;
-  font-weight: 500;
+  font-size: clamp(50px, 9vw, 112px);
+  letter-spacing: -0.055em;
+  line-height: 0.96;
+  margin: 26px 0 20px;
+  font-weight: 700;
 }
 
 .serif-word {
@@ -473,22 +586,114 @@ h1 {
 
 .hero-copy {
   position: relative;
-  max-width: 660px;
+  width: 100%;
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+/* The wave sits outside the pill, so the pill keeps its own glass edge. */
+.hero-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+}
+
+.hero-wave {
+  font-size: 22px;
+  line-height: 1;
+  transform-origin: 70% 80%;
+  animation: wave 2.6s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(16deg);
+  }
+  20%,
+  40% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* The name carries the gradient and a lit bar beneath it. */
+.name-word {
+  position: relative;
+  background: var(--grad-accent-bright);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* The bar is exactly as wide as the name, and the whole headline is its*/
+.name-word::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.08em;
+  height: 3px;
+  border-radius: 1px;
+  background: var(--grad-accent-bright);
+  box-shadow: 0 0 18px #8b5cf6a6;
+  animation: bar-slide 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes bar-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-39.3%);
+  }
+}
+
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 10px;
+  margin: 52px 0 16px;
+  font: 11px var(--mono);
+  letter-spacing: 0.09em;
+  color: var(--faint);
+  text-transform: uppercase;
+}
+
+/* A dot between each role, drawn rather than typed so it never wraps alone. */
+.hero-roles span + span::before {
+  content: '·';
+  margin-right: 10px;
+  color: var(--violet);
 }
 
 .hero-description {
-  max-width: 460px;
+  max-width: 620px;
+  margin-inline: auto;
   color: var(--muted);
-  line-height: 1.75;
-  font-size: 14px;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.hero-years {
+  color: var(--blue-bright);
+  border-bottom: 1px solid #60a5fa59;
 }
 
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 31px;
+  gap: 14px;
+  margin-top: 38px;
 }
 
 .button {
@@ -496,12 +701,14 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 16px 24px;
+  gap: 12px;
+  padding: 17px 30px;
   border: 0;
-  border-radius: var(--radius-md);
+  border-radius: 999px;
   font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #fff;
   cursor: pointer;
   background: var(--glass-strong);
@@ -538,59 +745,58 @@ h1 {
   color: #fff;
 }
 
+/* No panel here any more: the numbers sit straight on the starfield, split by
+   hairlines, so the hero reads as one centred column. */
 .hero-meta {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px 21px;
-  margin: 54px 0 0;
-  padding: 22px 28px;
+  gap: 14px clamp(28px, 6vw, 64px);
+  margin: 46px auto 0;
+  padding: 0;
   width: fit-content;
   max-width: 100%;
-  background: var(--glass);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--glow);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
 }
 
 /* Label sits above the number visually, while the DOM keeps dt before dd. */
 .hero-stat {
   display: flex;
   flex-direction: column-reverse;
-  gap: 4px;
+  align-items: center;
+  gap: 8px;
 }
 
 .meta-number {
-  font: 21px var(--mono);
+  font: 30px var(--sans);
+  font-weight: 700;
+  letter-spacing: -0.03em;
   margin: 0;
   min-height: 1.1em;
   display: flex;
   align-items: center;
-  background: var(--grad-accent-bright);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  justify-content: center;
+  color: #fff;
 }
 
 .meta-label {
-  font: 8px var(--mono);
+  font: 9px var(--mono);
   color: var(--faint);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.14em;
 }
 
 .meta-divider {
-  height: 31px;
+  height: 42px;
   width: 1px;
-  background: linear-gradient(180deg, transparent, #ffffff3d, transparent);
+  background: linear-gradient(180deg, transparent, #8b5cf680, transparent);
 }
 
 /* Placeholder shown while a live stat is still loading. */
 .stat-skeleton {
   display: inline-block;
-  width: 58px;
-  height: 13px;
+  width: 76px;
+  height: 22px;
   border-radius: var(--radius-sm);
   background: linear-gradient(90deg, #1b2740 25%, #2c3d61 50%, #1b2740 75%);
   background-size: 220% 100%;
@@ -606,74 +812,12 @@ h1 {
   }
 }
 
-.space-invader {
-  box-shadow: 0 0 0 1em var(--invader-color), 0 1em 0 1em var(--invader-color),
-    -2.5em 1.5em 0 0.5em var(--invader-color), 2.5em 1.5em 0 0.5em var(--invader-color),
-    -3em -3em 0 0 var(--invader-color), 3em -3em 0 0 var(--invader-color),
-    -2em -2em 0 0 var(--invader-color), 2em -2em 0 0 var(--invader-color),
-    -3em -1em 0 0 var(--invader-color), -2em -1em 0 0 var(--invader-color),
-    2em -1em 0 0 var(--invader-color), 3em -1em 0 0 var(--invader-color),
-    -4em 0 0 0 var(--invader-color), -3em 0 0 0 var(--invader-color),
-    3em 0 0 0 var(--invader-color), 4em 0 0 0 var(--invader-color),
-    -5em 1em 0 0 var(--invader-color), -4em 1em 0 0 var(--invader-color),
-    4em 1em 0 0 var(--invader-color), 5em 1em 0 0 var(--invader-color),
-    -5em 2em 0 0 var(--invader-color), 5em 2em 0 0 var(--invader-color),
-    -5em 3em 0 0 var(--invader-color), -3em 3em 0 0 var(--invader-color),
-    3em 3em 0 0 var(--invader-color), 5em 3em 0 0 var(--invader-color),
-    -2em 4em 0 0 var(--invader-color), -1em 4em 0 0 var(--invader-color),
-    1em 4em 0 0 var(--invader-color), 2em 4em 0 0 var(--invader-color);
-  background: var(--invader-color);
-  --invader-color: #60a5fa;
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  opacity: 0.55;
-  transform-origin: center;
-  animation: invader-drift 6s ease-in-out infinite alternate;
-}
-
-.invader-one {
-  top: 24%;
-  right: 11%;
-  font-size: 10px;
-  --invader-color: #60a5fa;
-  --tilt: 9deg;
-  animation-duration: 6.5s;
-}
-
-.invader-two {
-  top: 52%;
-  right: 30%;
-  font-size: 7px;
-  --invader-color: #818cf8;
-  --tilt: -12deg;
-  animation-delay: -2s;
-  animation-duration: 7.5s;
-}
-
-.invader-three {
-  right: 5%;
-  bottom: 20%;
-  font-size: 8px;
-  --invader-color: #a78bfa;
-  --tilt: 7deg;
-  animation-delay: -3.5s;
-  animation-duration: 8s;
-}
-
-@keyframes invader-drift {
-  from {
-    transform: translateY(0) rotate(var(--tilt, 0deg));
-  }
-  to {
-    transform: translateY(-10px) rotate(calc(var(--tilt, 0deg) - 5deg));
-  }
-}
 
 .scroll-cue {
   position: absolute;
-  bottom: 17px;
-  left: 0;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 10px;
   align-items: center;
@@ -701,6 +845,51 @@ h1 {
   50% {
     transform: translateY(3px);
   }
+}
+
+/* The stack strip closes the hero: a label, a hairline, then the chips. */
+.tech-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin-top: 56px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.tech-label {
+  font: 9px var(--mono);
+  letter-spacing: 0.16em;
+  color: var(--violet);
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tech-chips li {
+  padding: 8px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff0a;
+  font-size: 11px;
+  color: var(--muted);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease),
+    background 0.2s var(--ease);
+}
+
+.tech-chips li:hover {
+  color: #fff;
+  border-color: #8b5cf680;
+  background: var(--grad-accent-soft);
 }
 
 /* 5. Sections, filters, games grid ---------------------------------------- */
@@ -808,6 +997,8 @@ h1 {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--glow);
+  /* Anywhere on the card opens the prompt, so the whole slab is the hit area. */
+  cursor: pointer;
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
@@ -1063,9 +1254,11 @@ h1 {
   box-shadow: 0 26px 52px -20px #000000e6, 0 0 52px -10px #60a5fabf;
 }
 
-.game-button[aria-disabled='true'] {
-  opacity: 0.45;
-  pointer-events: none;
+/* Waiting on a release, so it stays quiet next to the lit play buttons. */
+.game-button.play.is-pending {
+  background: var(--glass-strong);
+  color: var(--blue-pale);
+  box-shadow: var(--glow);
 }
 
 .empty-state {
@@ -1082,196 +1275,123 @@ h1 {
 }
 
 /* 6. About ---------------------------------------------------------------- */
-/* The showpiece panel: a wider bloom than the cards, and an interior light so
-   it is not a flat sheet of tint. */
-.about-section {
-  position: relative;
-  isolation: isolate;
-  background: var(--glass);
-  border-radius: var(--radius-xl);
-  padding: 72px clamp(24px, 5vw, 72px);
-  overflow: hidden;
-  box-shadow: 0 40px 90px -40px #000, 0 0 80px -22px #3b82f673;
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-}
-
-.about-section::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background: radial-gradient(58% 70% at 88% 6%, #3b82f647 0%, transparent 62%),
-    radial-gradient(50% 60% at 2% 98%, #7c3aed38 0%, transparent 60%);
-  pointer-events: none;
-}
-
-.about-wrap {
-  max-width: 1030px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: clamp(32px, 5vw, 64px);
-  align-items: start;
-}
-
-.about-aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* No flanking rules here: the aside column is too narrow to fit them. */
-.aside-eyebrow {
-  display: block;
-  text-align: center;
-  line-height: 1.7;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--line);
-}
-
-.about-figure {
-  margin: 22px 0 0;
-  display: grid;
-  justify-items: center;
-  gap: 14px;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
-  padding: 3px;
-  background: var(--grad-accent-bright);
-  box-shadow: 0 20px 40px -20px #000, 0 0 40px -12px #60a5fa99;
-}
-
-.photo-caption {
-  display: block;
-  max-width: 190px;
-  color: var(--faint);
-  font: 10px/1.6 var(--mono);
-}
-
+/* Just the section header now: the body copy it used to carry lives in the
+   hero, so there is no panel left to draw. */
 .about-copy h2 {
   font-size: clamp(30px, 4vw, 51px);
   font-weight: 500;
   letter-spacing: -0.065em;
   line-height: 1.07;
-  margin: 0 0 22px;
+  margin: 26px 0 0;
 }
 
-.about-copy > p {
-  max-width: 62ch;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.85;
-  margin-bottom: 15px;
-}
-
-.about-copy strong {
-  color: #fff;
-  font-weight: 600;
-}
-
-.skills-title {
-  margin: 30px 0 0;
-  font: 9px var(--mono);
-  letter-spacing: 0.12em;
-  color: var(--faint);
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 14px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.skill-tags li {
-  position: relative;
-  background: var(--glass-strong);
-  border-radius: 999px;
-  color: var(--blue-pale);
-  padding: 10px 14px;
-  font: 9px var(--mono);
-  letter-spacing: 0.05em;
-  box-shadow: var(--glow);
-}
 
 /* 7. Contact + footer ----------------------------------------------------- */
+/* The heading runs the full width, with a rule carrying the eye across to the
+   arrow, and the contact cards sit in a row beneath it. */
 .contact-section {
   width: 100%;
   max-width: 1232px;
   margin-inline: auto;
+  padding: 62px 0 52px;
+}
+
+.contact-head {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
+  align-items: flex-end;
+  gap: clamp(20px, 4vw, 44px);
+  margin-top: 16px;
 }
 
 .contact-section h2 {
   font-size: clamp(40px, 6vw, 75px);
+  margin: 0;
 }
 
-.contact-action {
-  max-width: 330px;
-  padding-bottom: 5px;
+.contact-rule {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #ffffff2e, #ffffff0a);
 }
 
-.contact-action p {
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--muted);
-  margin-bottom: 19px;
+.contact-arrow {
+  margin-bottom: 20px;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1;
+  color: var(--blue-pale);
 }
 
-.contact-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.contact-icon {
-  position: relative;
-  width: 58px;
-  height: 58px;
+/* Fixed-width columns rather than fractions, so the row keeps its proportions
+   whether there are two cards or six. */
+.contact-cards {
   display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--glass-strong);
-  color: #fff;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 232px));
+  gap: 16px;
+  margin-top: clamp(26px, 3vw, 40px);
+}
+
+.contact-card {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 24px 18px 20px;
+  border-radius: var(--radius-lg);
+  background: var(--glass);
   box-shadow: var(--glow);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
 
-.contact-icon:hover {
-  transform: translateY(-3px);
+.contact-card:hover {
+  transform: translateY(-4px);
   box-shadow: var(--glow-lift);
 }
 
-.contact-icon svg {
-  width: 29px;
-  height: 29px;
+.card-arrow {
+  position: absolute;
+  top: 11px;
+  right: 13px;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--faint);
+  transition: color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.contact-card:hover .card-arrow {
+  color: #fff;
+  transform: translate(2px, -2px);
+}
+
+.card-icon {
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.card-icon svg {
+  width: 34px;
+  height: 34px;
   fill: currentColor;
 }
 
-.contact-icon-discord {
+.card-label {
+  font: 10px var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.contact-card-discord .card-icon {
   color: #93a4ff;
 }
 
-.contact-icon-email svg {
-  width: 31px;
-  height: 31px;
+/* Nothing to spell out: drop the element so its margin does not leave a gap. */
+.contact-direct:empty {
+  display: none;
 }
 
 .contact-direct {
@@ -1297,44 +1417,75 @@ h1 {
   width: 100%;
   max-width: 1232px;
   margin-inline: auto;
+  padding: 26px 0 22px;
   border-top: 1px solid var(--line);
-  min-height: 78px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto minmax(0, 1fr);
-  align-items: center;
-  column-gap: 10px;
   color: var(--faint);
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-brand {
+  font: 700 clamp(20px, 2.4vw, 28px) var(--sans);
+  letter-spacing: -0.045em;
+  color: var(--text);
+}
+
+.footer-brand span {
+  color: var(--violet);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font: 10px var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-nav a {
+  transition: color 0.2s var(--ease);
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer-nav span {
+  color: #ffffff2e;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
   font: 8px var(--mono);
   letter-spacing: 0.07em;
 }
 
-.footer-note {
-  justify-self: end;
-}
-
-.copyright {
-  justify-self: start;
-  text-align: left;
-}
-
-.footer-brand {
-  font: 12px var(--sans);
-  color: var(--text);
-  letter-spacing: -0.03em;
-}
-
-.footer-brand .brand-mark {
-  font-size: 18px;
-}
-
 .back-top {
-  justify-self: end;
   color: var(--muted);
 }
 
 /* 8. Dialog --------------------------------------------------------------- */
 .video-dialog {
-  position: relative;
+  /* Pinned to the viewport, not the document: a modal laid out in normal flow
+     makes the browser scroll the page to reach it. `inset` + `margin: auto`
+     centre it, and `relative`-style children still anchor to this box. */
+  position: fixed;
+  inset: 0;
+  margin: auto;
   width: min(900px, 92vw);
   border: 0;
   border-radius: var(--radius-lg);
@@ -1378,6 +1529,100 @@ h1 {
   box-shadow: var(--glow-lift);
 }
 
+.confirm-dialog {
+  /* Pinned to the viewport, not the document: a modal laid out in normal flow
+     makes the browser scroll the page to reach it. `inset` + `margin: auto`
+     centre it, and `relative`-style children still anchor to this box. */
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(430px, 90vw);
+  border: 0;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  background: var(--glass-strong);
+  color: var(--text);
+  box-shadow: var(--glow-lift);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.confirm-dialog::backdrop {
+  background: #04060ee6;
+  backdrop-filter: blur(10px);
+}
+
+.confirm-eyebrow {
+  margin: 0;
+  font: 9px var(--mono);
+  letter-spacing: 0.16em;
+  color: var(--blue-bright);
+}
+
+.confirm-dialog.is-notice .confirm-eyebrow {
+  color: #fbbf24;
+}
+
+.confirm-title {
+  margin: 12px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.confirm-body {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.confirm-body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.confirm-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--glass-strong);
+  color: #fff;
+  font: 10px var(--mono);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: var(--glow);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.confirm-button.is-primary {
+  background: var(--grad-lit);
+  font-weight: 500;
+  box-shadow: 0 20px 40px -22px #000000d9, 0 0 34px -12px #3b82f6a6;
+}
+
+.confirm-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow-lift);
+}
+
+/* `hidden` has to beat the flex display above when there is nothing to open. */
+.confirm-button[hidden] {
+  display: none;
+}
+
 .video-frame {
   aspect-ratio: 16 / 9;
   border-radius: var(--radius-md);
@@ -1393,33 +1638,6 @@ h1 {
 }
 
 /* Responsive -------------------------------------------------------------- */
-@media (max-width: 1080px) {
-  .about-wrap {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .about-aside {
-    order: 2;
-  }
-
-  .about-copy {
-    text-align: left;
-  }
-}
-
-@media (max-width: 860px) {
-  .contact-section {
-    flex-direction: column;
-    align-items: start;
-    gap: 28px;
-  }
-
-  .contact-action {
-    max-width: 460px;
-  }
-}
-
 @media (max-width: 760px) {
   :root {
     --nav-height: 70px;
@@ -1430,33 +1648,42 @@ h1 {
   }
 
   .main-nav {
-    gap: 18px;
-    font-size: 11px;
+    gap: 2px;
+    font-size: 10px;
   }
 
-  .availability {
-    display: none;
+  .main-nav a {
+    padding: 8px 11px;
   }
 
   .hero {
     min-height: 0;
-    padding: 58px 0 66px;
+    padding: 50px 0 66px;
   }
 
-  /* The drifting invaders sit over the headline once the hero narrows. */
-  .space-invader,
-  .hero-grid {
+  /* Too little clear space on a phone: the invaders would sit right behind
+     the copy. The grid is faint enough to stay. */
+  .space-invader {
     display: none;
   }
 
+  .hero-roles {
+    margin-top: 26px;
+    font-size: 10px;
+  }
+
   .hero-meta {
-    gap: 14px 18px;
-    margin-top: 40px;
-    padding: 18px 20px;
+    gap: 22px 26px;
+    margin-top: 36px;
   }
 
   .meta-divider {
     display: none;
+  }
+
+  .tech-row {
+    margin-top: 42px;
+    padding-top: 26px;
   }
 
   .section-wrap {
@@ -1492,19 +1719,17 @@ h1 {
     padding: 16px;
   }
 
-  .about-section {
-    padding: 54px 24px;
-  }
-
   .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
-    gap: 10px;
+    padding: 26px 0 24px;
   }
 
+  /* The bottom row has no space for three columns on a phone. */
   .footer-note {
+    display: none;
+  }
+
+  .contact-arrow,
+  .contact-rule {
     display: none;
   }
 }
@@ -1516,8 +1741,12 @@ h1 {
   }
 
   .main-nav {
-    gap: 14px;
-    font-size: 10px;
+    gap: 0;
+    font-size: 9px;
+  }
+
+  .main-nav a {
+    padding: 7px 8px;
   }
 
   .hero-actions .button {
@@ -1525,7 +1754,7 @@ h1 {
   }
 
   .hero-meta {
-    gap: 14px 20px;
+    gap: 18px 22px;
   }
 
   .meta-label {
@@ -1546,7 +1775,7 @@ h1 {
     margin-left: auto;
   }
 
-  .footer {
+  .footer-bottom {
     font-size: 7px;
   }
 }
@@ -1556,15 +1785,14 @@ h1 {
   .topbar,
   .availability,
   .button,
-  .hero-meta,
   .filter-chip,
   .game-card,
   .empty-state,
-  .about-section,
-  .skill-tags li,
-  .contact-icon,
+  .contact-card,
   .game-button,
   .video-dialog,
+  .confirm-dialog,
+  .confirm-button,
   .dialog-close {
     background: #121b30;
   }
@@ -1586,10 +1814,11 @@ h1 {
 
   .button:hover,
   .game-card:hover,
-  .contact-icon:hover,
+  .contact-card:hover,
   .filter-chip:hover,
   .game-button:hover,
   .availability:hover,
+  .confirm-button:hover,
   .dialog-close:hover {
     transform: none;
   }
